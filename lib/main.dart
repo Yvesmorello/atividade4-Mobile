@@ -40,7 +40,6 @@ class _TelaFormularioState extends State<TelaFormulario> {
   }
 
   void _navegarParaLista(BuildContext context) async {
-    // A função push retorna um valor quando a tela chamada é fechada
     final resultado = await Navigator.push(
       context,
       MaterialPageRoute(
@@ -113,7 +112,6 @@ class TelaLista extends StatelessWidget {
               trailing: IconButton(
                 icon: Icon(Icons.delete),
                 onPressed: () {
-                  // Remove o item da lista e retorna a nova lista para a tela anterior
                   Navigator.pop(context, _removerTransacao(index));
                 },
               ),
